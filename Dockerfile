@@ -6,13 +6,13 @@ RUN pip3 install --upgrade pip setuptools
 
 # Docker work bsdk
 
-RUN git clone https://github.com/Gladiators-Projects/SpamBot /root/spambot
+RUN git clone https://github.com/Gladiators-Projects/spambot /root/spambot
 
 COPY ./spambot/sample_config.py ./spambot/config.py* /root/spambot/spambot/
 
 
 # Install requirements
-RUN pip3 install  -U -r requirements.txt
+RUN pip3 install --no-cache-dir -U -r requirements.txt
 
 ENV PIP_NO_CACHE_DIR 1
 
