@@ -7,7 +7,7 @@ RUN pip3 install --upgrade pip setuptools
 
 # Docker work bsdk
 
-
+RUN git clone https://github.com/Gladiators-Projects/SpamBot
 COPY ./spambot/sample_config.py ./spambot/config.py* /root/spambot/spambot/
 
 
