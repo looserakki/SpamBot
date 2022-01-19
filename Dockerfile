@@ -2,6 +2,7 @@
 FROM python:3.10.1-slim-buster
 
 RUN apt-get update -y && apt-get upgrade -y 
+RUN apt-get intall git
 RUN pip3 install --upgrade pip setuptools
 
 # Docker work bsdk
